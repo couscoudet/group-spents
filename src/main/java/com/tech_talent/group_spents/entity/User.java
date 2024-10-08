@@ -11,13 +11,13 @@ import jakarta.persistence.Id;
 public class User implements IEntity {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	Integer id;
+	private Integer id;
 	
-	String pseudo;
+	private String pseudo;
 	
-	String email;
+	private String email;
 	
-	String password;
+	private String password;
 	
 	private Date creationDate;
 	
